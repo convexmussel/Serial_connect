@@ -13,6 +13,7 @@ namespace serial
 {
     public partial class Form1 : Form
     {
+        List<Panel> panels = new List<Panel>();
         public string a = "";
         public string com = "";
         public int baudss = 9600;
@@ -176,5 +177,23 @@ namespace serial
             updateCom();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+           panels[1].BringToFront();
+          
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            panels.Add(panel1);
+            panels.Add(panel2);
+            panels[0].BringToFront();
+            to.AppendText("hallo");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panels[0].BringToFront();
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace serial
 {
     public partial class Form1 : Form
     {
+        public List<Panel> panels = new List<Panel>();
         public string a = "";
         public string com = "";
         public int baudss = 9600;
