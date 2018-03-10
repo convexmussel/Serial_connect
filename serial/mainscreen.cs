@@ -106,9 +106,16 @@ namespace serial
 
         private void openconnection()
         {
-            serialport.PortName = com;
-            serialport.BaudRate = baudss;
-            serialport.Open();
+            try
+            {
+                serialport.PortName = com;
+                serialport.BaudRate = baudss;
+                serialport.Open();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("com port busy please close already open connection!!");
+            }
         }
 
         private void closeconnection()
@@ -213,6 +220,12 @@ namespace serial
                 index_panel = 0;  
             }
             panels[index_panel].BringToFront();
+        }
+
+        private void macro1_Click(object sender, EventArgs e)
+        {
+            
+            Send_Data("2");
         }
     }
 }

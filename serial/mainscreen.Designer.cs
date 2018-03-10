@@ -49,10 +49,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.nextButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.macro1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -255,21 +256,11 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.macro1);
             this.panel2.Location = new System.Drawing.Point(726, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1024, 414);
             this.panel2.TabIndex = 19;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe Print", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(374, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(265, 98);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "random";
             // 
             // nextButton
             // 
@@ -301,14 +292,32 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Location = new System.Drawing.Point(1117, 432);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(285, 116);
+            this.groupBox5.TabIndex = 24;
+            this.groupBox5.TabStop = false;
+            // 
+            // macro1
+            // 
+            this.macro1.Location = new System.Drawing.Point(17, 17);
+            this.macro1.Name = "macro1";
+            this.macro1.Size = new System.Drawing.Size(75, 23);
+            this.macro1.TabIndex = 0;
+            this.macro1.Text = "send";
+            this.macro1.UseVisualStyleBackColor = true;
+            this.macro1.Click += new System.EventHandler(this.macro1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2164, 1071);
+            this.Controls.Add(this.nextButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.nextButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.send);
@@ -318,6 +327,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox5);
             this.Name = "Form1";
             this.Text = "Serial Monitor";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -330,7 +340,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,10 +366,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button macro1;
     }
 }
 
