@@ -18,7 +18,7 @@ namespace serial
         public string com = "";
         public int baudss = 9600;
         static SerialPort serialport;
-        public int index_panel =0;
+        public int index_panel;
         public Form1()
         {
             serialport = new SerialPort();
@@ -191,7 +191,8 @@ namespace serial
         {
             panels.Add(panel1);
             panels.Add(panel2);
-            panels[index_panel].BringToFront();
+            panels.Add(panel3);
+            panels[0].BringToFront();
         
         }
 
@@ -226,6 +227,16 @@ namespace serial
         {
             
             Send_Data("2");
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void macros2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="macros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="macros.Designer.cs">
+      <DependentUpon>macros.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainscreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +59,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="macros.resx">
+      <DependentUpon>macros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainscreen.resx">
       <DependentUpon>mainscreen.cs</DependentUpon>
     </EmbeddedResource>

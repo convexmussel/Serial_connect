@@ -49,16 +49,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.macro1 = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.macro1 = new System.Windows.Forms.Button();
+            this.macros1 = new serial.macros();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.macros2 = new serial.macros();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -219,7 +224,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(726, 12);
+            this.panel1.Location = new System.Drawing.Point(746, 21);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1024, 414);
             this.panel1.TabIndex = 18;
@@ -228,7 +233,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("standard 07_57", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(178, 189);
+            this.label5.Location = new System.Drawing.Point(152, 185);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(676, 42);
             this.label5.TabIndex = 2;
@@ -238,7 +243,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("standard 07_57", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(259, 147);
+            this.label4.Location = new System.Drawing.Point(242, 143);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(493, 42);
             this.label4.TabIndex = 1;
@@ -248,7 +253,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("standard 07_57", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(450, 66);
+            this.label3.Location = new System.Drawing.Point(424, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 78);
             this.label3.TabIndex = 0;
@@ -257,10 +262,20 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.macro1);
-            this.panel2.Location = new System.Drawing.Point(726, 12);
+            this.panel2.Location = new System.Drawing.Point(746, 21);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1024, 414);
+            this.panel2.Size = new System.Drawing.Size(1024, 411);
             this.panel2.TabIndex = 19;
+            // 
+            // macro1
+            // 
+            this.macro1.Location = new System.Drawing.Point(281, 120);
+            this.macro1.Name = "macro1";
+            this.macro1.Size = new System.Drawing.Size(435, 134);
+            this.macro1.TabIndex = 0;
+            this.macro1.Text = "send";
+            this.macro1.UseVisualStyleBackColor = true;
+            this.macro1.Click += new System.EventHandler(this.macro1_Click);
             // 
             // nextButton
             // 
@@ -294,32 +309,47 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.macros1);
             this.groupBox5.Location = new System.Drawing.Point(1117, 432);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(285, 116);
             this.groupBox5.TabIndex = 24;
             this.groupBox5.TabStop = false;
             // 
-            // macro1
+            // macros1
             // 
-            this.macro1.Location = new System.Drawing.Point(17, 17);
-            this.macro1.Name = "macro1";
-            this.macro1.Size = new System.Drawing.Size(75, 23);
-            this.macro1.TabIndex = 0;
-            this.macro1.Text = "send";
-            this.macro1.UseVisualStyleBackColor = true;
-            this.macro1.Click += new System.EventHandler(this.macro1_Click);
+            this.macros1.Location = new System.Drawing.Point(204, 6);
+            this.macros1.Name = "macros1";
+            this.macros1.Size = new System.Drawing.Size(471, 310);
+            this.macros1.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.macros2);
+            this.panel3.Location = new System.Drawing.Point(749, 21);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1024, 414);
+            this.panel3.TabIndex = 25;
+            // 
+            // macros2
+            // 
+            this.macros2.Location = new System.Drawing.Point(38, 20);
+            this.macros2.Name = "macros2";
+            this.macros2.Size = new System.Drawing.Size(471, 310);
+            this.macros2.TabIndex = 0;
+            this.macros2.Load += new System.EventHandler(this.macros2_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2164, 1071);
+            this.ClientSize = new System.Drawing.Size(2245, 1071);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.send);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -340,6 +370,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,6 +403,9 @@
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button macro1;
+        private macros macros1;
+        private System.Windows.Forms.Panel panel3;
+        private macros macros2;
     }
 }
 
