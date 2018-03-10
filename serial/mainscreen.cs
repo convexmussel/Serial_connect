@@ -55,7 +55,7 @@ namespace serial
             }
         }
 
-        private void Send_Data(String send)
+        public void Send_Data(String send)
         {
             if (serialport.IsOpen)
             {
@@ -189,10 +189,14 @@ namespace serial
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            panel2.Location = panel1.Location;
+            panel3.Location = panel1.Location;
             panels.Add(panel1);
             panels.Add(panel2);
             panels.Add(panel3);
             panels[0].BringToFront();
+
+            macros1._master = this;
         
         }
 
@@ -223,20 +227,6 @@ namespace serial
             panels[index_panel].BringToFront();
         }
 
-        private void macro1_Click(object sender, EventArgs e)
-        {
-            
-            Send_Data("2");
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void macros2_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
