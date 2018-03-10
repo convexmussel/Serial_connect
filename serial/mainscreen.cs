@@ -18,6 +18,7 @@ namespace serial
         public string com = "";
         public int baudss = 9600;
         static SerialPort serialport;
+        public int index_panel =0;
         public Form1()
         {
             serialport = new SerialPort();
@@ -177,23 +178,41 @@ namespace serial
             updateCom();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-           panels[1].BringToFront();
-          
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
             panels.Add(panel1);
             panels.Add(panel2);
-            panels[0].BringToFront();
-            to.AppendText("hallo");
+            panels[index_panel].BringToFront();
+        
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
-            panels[0].BringToFront();
+            if (index_panel > 0)
+            {
+                index_panel--;
+            }
+            else
+            {
+                index_panel = panels.Count - 1;
+            }
+            panels[index_panel].BringToFront();
+
+        }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            if (index_panel < panels.Count-1)
+            {
+                index_panel++;
+            }
+            else
+            {
+                index_panel = 0;  
+            }
+            panels[index_panel].BringToFront();
         }
     }
 }
