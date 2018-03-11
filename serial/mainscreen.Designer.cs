@@ -222,7 +222,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("standard 07_57", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(113, 176);
+            this.label5.Location = new System.Drawing.Point(142, 219);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(676, 42);
             this.label5.TabIndex = 2;
@@ -232,7 +232,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("standard 07_57", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(171, 224);
+            this.label4.Location = new System.Drawing.Point(241, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(493, 42);
             this.label4.TabIndex = 1;
@@ -242,7 +242,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("standard 07_57", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(356, 89);
+            this.label3.Location = new System.Drawing.Point(426, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 78);
             this.label3.TabIndex = 0;
@@ -291,7 +291,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(738, 12);
+            this.panel1.Location = new System.Drawing.Point(726, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(982, 426);
             this.panel1.TabIndex = 25;
@@ -307,7 +307,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(738, 12);
+            this.panel3.Location = new System.Drawing.Point(1917, 205);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(982, 426);
             this.panel3.TabIndex = 26;
