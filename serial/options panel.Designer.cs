@@ -47,69 +47,78 @@
             this.groupBox1.Controls.Add(this.command);
             this.groupBox1.Controls.Add(this.bName);
             this.groupBox1.Controls.Add(this.name);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(15, 16);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(340, 143);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(357, 122);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "user control";
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(165, 109);
+            this.closeButton.Location = new System.Drawing.Point(182, 88);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 23);
+            this.closeButton.Size = new System.Drawing.Size(84, 29);
             this.closeButton.TabIndex = 6;
             this.closeButton.Text = "close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // confirmButton
             // 
-            this.confirmButton.Location = new System.Drawing.Point(246, 109);
+            this.confirmButton.Location = new System.Drawing.Point(273, 88);
+            this.confirmButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.confirmButton.Name = "confirmButton";
-            this.confirmButton.Size = new System.Drawing.Size(75, 23);
+            this.confirmButton.Size = new System.Drawing.Size(84, 29);
             this.confirmButton.TabIndex = 5;
             this.confirmButton.Text = "confirm";
             this.confirmButton.UseVisualStyleBackColor = true;
+            this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
             // 
             // bCommand
             // 
-            this.bCommand.Location = new System.Drawing.Point(105, 81);
+            this.bCommand.Location = new System.Drawing.Point(115, 54);
+            this.bCommand.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bCommand.Name = "bCommand";
-            this.bCommand.Size = new System.Drawing.Size(216, 22);
+            this.bCommand.Size = new System.Drawing.Size(242, 26);
             this.bCommand.TabIndex = 4;
             // 
             // command
             // 
             this.command.AutoSize = true;
-            this.command.Location = new System.Drawing.Point(8, 84);
+            this.command.Location = new System.Drawing.Point(26, 57);
             this.command.Name = "command";
-            this.command.Size = new System.Drawing.Size(91, 17);
+            this.command.Size = new System.Drawing.Size(83, 20);
             this.command.TabIndex = 3;
-            this.command.Text = "button name:";
+            this.command.Text = "command:";
             // 
             // bName
             // 
-            this.bName.Location = new System.Drawing.Point(105, 53);
+            this.bName.Location = new System.Drawing.Point(115, 19);
+            this.bName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bName.Name = "bName";
-            this.bName.Size = new System.Drawing.Size(216, 22);
+            this.bName.Size = new System.Drawing.Size(242, 26);
             this.bName.TabIndex = 2;
             // 
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Location = new System.Drawing.Point(8, 56);
+            this.name.Location = new System.Drawing.Point(6, 23);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(91, 17);
+            this.name.Size = new System.Drawing.Size(103, 20);
             this.name.TabIndex = 1;
             this.name.Text = "button name:";
             // 
             // options_panel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 162);
+            this.ClientSize = new System.Drawing.Size(384, 141);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "options_panel";
             this.Text = "options_form";
             this.groupBox1.ResumeLayout(false);

@@ -24,6 +24,16 @@ namespace serial
             
         }
 
-       
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
+            button.Text = bName.Text;
+            settings.button_print = bCommand.Text;
+            this.Close();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 
+
 namespace serial
 {
     public partial class macros : UserControl
@@ -29,7 +30,7 @@ namespace serial
             {
                 buttons.Add(temp, new ButtonSettings(index.ToString()));
                 temp.Click += new System.EventHandler(this.Anybutton_Click);
-               
+                
             }           
         }
 
@@ -53,6 +54,11 @@ namespace serial
         private void settings_CheckedChanged(object sender, EventArgs e)
         {
             _setting = !_setting;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
