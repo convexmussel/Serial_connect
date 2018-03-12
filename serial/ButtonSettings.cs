@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace serial
 {
-    class ButtonSettings
+    public class ButtonSettings
     {
         public String button_print;
         public ButtonSettings(String button_print)

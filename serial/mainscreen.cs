@@ -33,7 +33,7 @@ namespace serial
             serialport.NewLine = "\n";               
             serialport.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(SerialPort1_DataReceived);
             updateCom();
-            comselect.SelectedIndex = 0;
+           
         }
 
         private void updateCom()

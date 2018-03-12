@@ -58,6 +58,12 @@
     <Compile Include="mainscreen.Designer.cs">
       <DependentUpon>mainscreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="options panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="options panel.Designer.cs">
+      <DependentUpon>options panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="macros.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mainscreen.resx">
       <DependentUpon>mainscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="options panel.resx">
+      <DependentUpon>options panel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
